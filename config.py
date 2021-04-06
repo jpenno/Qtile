@@ -506,7 +506,7 @@ def init_widgets_list():
                         foreground = colors[5],
                         background = colors[1],
                         fontsize = 22,
-                        format="%d/%m|%I:%M"
+                        format="%I:%M|%d/%m"
                         ),
                 widget.Sep(
                          linewidth = 1,
