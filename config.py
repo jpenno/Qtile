@@ -315,19 +315,43 @@ def init_widgets_list():
                         foreground = colors[2],
                         background = colors[1]
                         ),
+               # widget.TextBox(
+               #          font="FontAwesome",
+               #          text="  ",
+               #          foreground=colors[4],
+               #          background=colors[1],
+               #          padding = 0,
+               #          fontsize=18
+               #          ),
+               widget.Memory(
+                        max_chars = 1,
+                        font="Noto Sans",
+                        measure_mem = "G",
+                        format = 'Mem: {MemPercent}%',
+                        update_interval = 1,
+                        fontsize = 18,
+                        foreground = colors[5],
+                        background = colors[1],
+                       ),
+               widget.Sep(
+                        linewidth = 1,
+                        padding = 10,
+                        foreground = colors[2],
+                        background = colors[1]
+                        ),
                 widget.TextBox(
                          font="fira code",
                          text="Vol:",
-                         foreground=colors[2],
-                         background=colors[1],
+                         foreground = colors[5],
+                         background = colors[1],
                          padding = 0,
                          fontsize=20
                          ),
                widget.Volume(
                          fontsize=20,
                          font="fira code",
-                         foreground=colors[2],
-                         background=colors[1],
+                         foreground = colors[5],
+                         background = colors[1],
                         ),
                widget.Sep(
                         linewidth = 1,
@@ -482,7 +506,7 @@ def init_widgets_list():
                         foreground = colors[5],
                         background = colors[1],
                         fontsize = 22,
-                        format="%I:%M"
+                        format="%d/%m|%I:%M"
                         ),
                 widget.Sep(
                          linewidth = 1,
